@@ -28,5 +28,36 @@ Based on the current collection of fast, curiosity-driven scripts, web scrapers,
 **Tech Stack:** Python, `CustomTkinter`, `Pillow` (PIL).
 **Free Guide Included:** *Pixel Perfect: A Beginner's Introduction to Image Processing and Manipulation in Python.*
 
+## 5. 🧠 CLI Flashcard & Spaced Repetition Engine
+**The Idea:** A terminal-based flashcard app that uses a spaced repetition algorithm to help you memorize anything. Feed it a simple CSV of question-answer pairs, and it tracks your learning progress.
+**The Impact:** Helps students and lifelong learners memorize complex topics faster without needing bulky, ad-filled software.
+**Tech Stack:** Python, `Rich` (for CLI formatting), `argparse`.
+**Free Guide Included:** *Memory Hacking: Building a Spaced Repetition Algorithm from Scratch.*
+
+## 6. 🍳 Local "Find My Recipe" Engine
+**The Idea:** A script where you input the random ingredients sitting in your fridge, and it hits a free recipe API to return 3 simple meals you can cook right now.
+**The Impact:** Reduces food waste and helps budget-conscious people cook healthy meals without stressing over meal prep.
+**Tech Stack:** Python, `requests`, REST APIs.
+**Free Guide Included:** *Zero-Waste Coding: A Quick-Start Guide to Consuming REST APIs.*
+
+## 7. 🌱 "Pay-It-Forward" Open Source Tracker
+**The Idea:** A small tracker that queries GitHub for "good first issues" across open-source projects based on your favorite programming languages, presenting them in a clean daily digest.
+**The Impact:** Lowers the barrier to entry for beginner developers looking to make their first open-source contribution and build their confidence.
+**Tech Stack:** Python, GitHub API.
+**Free Guide Included:** *The Open Source Gateway: Navigating the GitHub API and Making Your First PR.*
+
+## 8. ⌨️ Keyboard Hero (Typing Speed Game)
+**The Idea:** A terminal or PyGame-based typing game where words fall from the top of the screen (like Tetris), and you must type them correctly to destroy them before they hit the bottom.
+**The Impact:** Gamifies typing practice, helping kids and adults improve their typing speed and accuracy in a fun, non-boring way.
+**Tech Stack:** Python, PyGame or `curses`.
+**Free Guide Included:** *Game Loops 101: Managing State, Time, and User Input in Python Games.*
+
+## 9. 💸 Personal Budget "Roaster" (AI Expense Tracker)
+**The Idea:** A script that takes an exported CSV of your monthly bank transactions, categorizes them, and provides a humorous, sarcastic "roast" of your spending habits using a free LLM API or basic logic.
+**The Impact:** Makes budgeting and financial literacy engaging and funny rather than stressful, encouraging better money management.
+**Tech Stack:** Python, `pandas` (for CSV processing), basic API integration.
+**Free Guide Included:** *Data Wrangling for Beginners: How to Clean and Analyze CSV Data with Pandas.*
+
 ---
 > **Want to contribute to these ideas?** Grab an idea, build it in a weekend, and drop a PR! Keep it small, keep it fun, and remember: *there are no rules here.*
+
