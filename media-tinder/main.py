@@ -505,8 +505,9 @@ class MediaTinderApp(ctk.CTk):
 
         if pywinstyles:
             try:
-                pywinstyles.apply_style(self, "acrylic")
-                pywinstyles.change_header_color(self, color="#0a0a0f")
+                # pywinstyles.apply_style(self, "acrylic")
+                # pywinstyles.change_header_color(self, color="#0a0a0f")
+                pass
             except Exception:
                 pass
 
