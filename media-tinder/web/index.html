@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Media Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Siri-like animated gradient background -->
+    <div class="siri-background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- UI Overlay -->
+    <main class="app-container">
+        <header class="topbar">
+            <h1 class="logo">Media Matcher</h1>
+            <button class="watchlist-btn" id="watchlist-toggle">
+                <span>Watchlist</span>
+                <span class="badge" id="watchlist-count">0</span>
+            </button>
+        </header>
+
+        <div class="stats-row">
+            <div class="stat like-stat">✓ <span id="like-count">0</span> Liked</div>
+            <div class="stat queue-stat"><span id="queue-count">0</span> left</div>
+            <div class="stat pass-stat"><span id="pass-count">0</span> Passed ✕</div>
+        </div>
+
+        <section class="card-area" id="card-area">
+            <!-- Cards will be injected here via JS -->
+        </section>
+
+        <footer class="controls">
+            <button class="action-btn pass-btn" id="btn-pass">
+                <!-- X icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <button class="action-btn like-btn" id="btn-like">
+                <!-- Heart icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </button>
+        </footer>
+    </main>
+
+    <!-- Watchlist Sidebar -->
+    <aside class="watchlist-panel" id="watchlist-panel">
+        <div class="panel-header">
+            <h2>Watchlist</h2>
+            <button id="watchlist-close">&times;</button>
+        </div>
+        <div class="panel-content" id="watchlist-items">
+            <div class="empty-state" id="wl-empty">Nothing liked yet.<br>Start swiping! →</div>
+        </div>
+    </aside>
+
+    <!-- GSAP for elite animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Draggable plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
